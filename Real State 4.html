@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost:3000/admin/index.php -->
+<html lang="en" class="  webp webp-alpha webp-animation webp-lossless"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real State</title>
+    <link href="./Real State 4_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./Real State 4_files/app.css">
+</head>
+
+<body>
+
+    <header class="header ">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="http://localhost:3000/" class="logo">
+                    <img src="./Real State 4_files/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <a href="http://localhost:3000/admin/index.php#navegacion">
+                        <img src="./Real State 4_files/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+                
+
+                
+                <nav id="navegacion" class="navegacion">
+                    <a href="http://localhost:3000/admin/nosotros.php">Us</a>
+                    <a href="http://localhost:3000/admin/anuncios.php">Ads</a>
+                    <a href="http://localhost:3000/admin/blog.php">Blog</a>
+                    <a href="http://localhost:3000/admin/contacto.php">Contact</a>
+                </nav>
+                
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+<h1 class="fw-300 centrar-texto">Administration</h1>
+
+<main class="contenedor seccion contenido-centrado">
+
+
+    
+    <a href="http://localhost:3000/admin/propiedades/crear.php" class="boton boton-verde">New Property</a>
+    <a href="http://localhost:3000/admin/vendedores/crear.php" class="boton boton-amarillo">New Seller </a>
+
+    <h2>Properties</h2>
+
+
+    <table class="propiedades">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                        <tr>
+                <td>40</td>
+                <td>  Hermosa casa en la playa </td>
+                <td>
+                    <img src="./Real State 4_files/58b5a512835bf515a247498505d12554.jpg" "="" width="100" class="imagen-tabla">
+                </td>
+                <td>$ 1111111.00</td>
+                <td>
+                <form method="POST">
+                    <input type="hidden" name="id_eliminar" value="40">
+                    <input type="hidden" name="tipo" value="propiedad">
+                    <input type="submit" href="/admin/propiedades/borrar.php" class="boton boton-rojo" value="Erase">
+                </form>
+                    
+                    <a href="http://localhost:3000/admin/propiedades/actualizar.php?id=40" class="boton boton-verde">Update</a>
+                </td>
+            </tr>
+
+                        <tr>
+                <td>43</td>
+                <td> nueva propiedad</td>
+                <td>
+                    <img src="./Real State 4_files/d08cfb3c05167f7bc6741972cd365eca.jpg" "="" width="100" class="imagen-tabla">
+                </td>
+                <td>$ 12324312.00</td>
+                <td>
+                <form method="POST">
+                    <input type="hidden" name="id_eliminar" value="43">
+                    <input type="hidden" name="tipo" value="propiedad">
+                    <input type="submit" href="/admin/propiedades/borrar.php" class="boton boton-rojo" value="Erase">
+                </form>
+                    
+                    <a href="http://localhost:3000/admin/propiedades/actualizar.php?id=43" class="boton boton-verde">Update</a>
+                </td>
+            </tr>
+
+                        <tr>
+                <td>44</td>
+                <td>  Hermosa casa con psicina</td>
+                <td>
+                    <img src="./Real State 4_files/df4d6d8edc7b68917a47eb14f051b7c5.jpg" "="" width="100" class="imagen-tabla">
+                </td>
+                <td>$ 2222222.00</td>
+                <td>
+                <form method="POST">
+                    <input type="hidden" name="id_eliminar" value="44">
+                    <input type="hidden" name="tipo" value="propiedad">
+                    <input type="submit" href="/admin/propiedades/borrar.php" class="boton boton-rojo" value="Erase">
+                </form>
+                    
+                    <a href="http://localhost:3000/admin/propiedades/actualizar.php?id=44" class="boton boton-verde">Update</a>
+                </td>
+            </tr>
+
+                        <tr>
+                <td>47</td>
+                <td>  Hermosa casa en la playa Updated</td>
+                <td>
+                    <img src="./Real State 4_files/4b96efe6344afecf8690973aba5c6848.jpg" "="" width="100" class="imagen-tabla">
+                </td>
+                <td>$ 2222222.00</td>
+                <td>
+                <form method="POST">
+                    <input type="hidden" name="id_eliminar" value="47">
+                    <input type="hidden" name="tipo" value="propiedad">
+                    <input type="submit" href="/admin/propiedades/borrar.php" class="boton boton-rojo" value="Erase">
+                </form>
+                    
+                    <a href="http://localhost:3000/admin/propiedades/actualizar.php?id=47" class="boton boton-verde">Update</a>
+                </td>
+            </tr>
+
+                    </tbody>
+    </table>
+    <h2>Seller</h2>
+    <table class="propiedades">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                        <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td> 1543615197</td>
+                <td>
+                <form method="POST">
+                    <input type="hidden" name="id_eliminar" value="1">
+                    <input type="hidden" name="tipo" value="vendedor">
+                    <input type="submit" href="/admin/propiedades/borrar.php" class="boton boton-rojo" value="Erase">
+                </form>
+                    
+                    <a href="http://localhost:3000/admin/vendedores/actualizar.php?id=1" class="boton boton-verde">Update</a>
+                </td>
+            </tr>
+
+                        <tr>
+                <td>2</td>
+                <td>Karen</td>
+                <td> 1564454646</td>
+                <td>
+                <form method="POST">
+                    <input type="hidden" name="id_eliminar" value="2">
+                    <input type="hidden" name="tipo" value="vendedor">
+                    <input type="submit" href="/admin/propiedades/borrar.php" class="boton boton-rojo" value="Erase">
+                </form>
+                    
+                    <a href="http://localhost:3000/admin/vendedores/actualizar.php?id=2" class="boton boton-verde">Update</a>
+                </td>
+            </tr>
+
+                        <tr>
+                <td>4</td>
+                <td> Pablo</td>
+                <td> 8715140373</td>
+                <td>
+                <form method="POST">
+                    <input type="hidden" name="id_eliminar" value="4">
+                    <input type="hidden" name="tipo" value="vendedor">
+                    <input type="submit" href="/admin/propiedades/borrar.php" class="boton boton-rojo" value="Erase">
+                </form>
+                    
+                    <a href="http://localhost:3000/admin/vendedores/actualizar.php?id=4" class="boton boton-verde">Update</a>
+                </td>
+            </tr>
+
+                    </tbody>
+    </table>
+
+</main>
+
+<footer class="site-footer seccion">
+    <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+            <a href="http://localhost:3000/admin/nosotros.php">Us</a>
+            <a href="http://localhost:3000/admin/anuncios.php">Ads</a>
+            <a href="http://localhost:3000/admin/blog.php">Blog</a>
+            <a href="http://localhost:3000/admin/contacto.php">Contact</a>
+            
+            
+        
+        </nav>
+        <p class="copyright">All rights reserved 2022 © </p>
+    </div>
+</footer>
+
+<script src="./Real State 4_files/bundle.min.js.descarga"></script>
+
+
+</body></html>
